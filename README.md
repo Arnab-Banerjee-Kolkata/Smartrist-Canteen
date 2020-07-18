@@ -8,17 +8,17 @@ Canteen application for Smartrist card
 <tr>
 
 <td align="center" valign="center">
-<img src="https://github.com/Arnab-Banerjee-Kolkata/Smartrist-Canteen/blob/master/screenshots/can1.png" alt="description here" height="600" width="350"/>
+<img src="https://github.com/Arnab-Banerjee-Kolkata/Smartrist-Canteen/blob/master/screenshots/can1.png" alt="description here" height="500" width="350"/>
 <br />
 </td>
 
 <td align="center" valign="center">
-<img src="https://github.com/Arnab-Banerjee-Kolkata/Smartrist-Canteen/blob/master/screenshots/can2.png" alt="description here" height="600" width="350" />
+<img src="https://github.com/Arnab-Banerjee-Kolkata/Smartrist-Canteen/blob/master/screenshots/can2.png" alt="description here" height="500" width="350" />
 <br />
 </td>
 
 <td align="center" valign="center">
-<img src="https://github.com/Arnab-Banerjee-Kolkata/Smartrist-Canteen/blob/master/screenshots/can3.png" alt="description here" height="600" width="350" />
+<img src="https://github.com/Arnab-Banerjee-Kolkata/Smartrist-Canteen/blob/master/screenshots/can3.png" alt="description here" height="500" width="350" />
 <br />
 </td>
 
