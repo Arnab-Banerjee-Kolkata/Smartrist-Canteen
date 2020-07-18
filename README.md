@@ -24,3 +24,9 @@ Canteen application for Smartrist card
 
 </tr>
 </table>
+
+# Presentation video
+https://drive.google.com/file/d/1EHD53OxTH3WePxif78jxN8_lDOq_r_Zd/view?usp=sharing
+
+# Download links
+https://drive.google.com/drive/folders/18nJ27uMrwQ_NucmereL4fyxOZWoj2W5O?usp=sharing
