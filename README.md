@@ -1,5 +1,6 @@
 # Smartrist-Canteen
-Canteen application for Smartrist card
+Canteen application for Smartrist card.
+Canteen staff can use this application to accept food orders from students, marked served order and aaccept cashless payments from students. Students just need to scan their smartrist cards and all the information and authentication is easily received in the canteen app. This ensures safe payment method as the smartrist card cannot be forged in any way.
 
 # Screenshots
 
