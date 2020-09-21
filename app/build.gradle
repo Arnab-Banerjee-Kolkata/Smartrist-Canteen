@@ -46,4 +46,9 @@ dependencies {
     implementation "com.stringcare:library:$stringcare_version"
     //encrypy-decrypt(t21-crypter-android)
     implementation 'com.tempos21.t21crypt:t21_crypter_android:1.0.5'
+
+    //Text animator
+
+    implementation "com.hanks:htextview-base:0.1.6"
+    implementation "com.hanks:htextview-fade:0.1.6"
 }

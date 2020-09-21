@@ -118,6 +118,20 @@
     </LinearLayout>
 
     <RelativeLayout
+        android:id="@+id/orderMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No order placed"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/orderWait"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -1,6 +1,5 @@
 package cardproject.android.arnab.canteen;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -37,7 +36,7 @@ public class OrderDetails extends AppCompatActivity implements View.OnClickListe
 {
     ImageView detailsBg;
     Button acceptBtn, cancelBtn;
-    RelativeLayout orderWait;
+    RelativeLayout orderWait,orderMsg;
     TextView name, quantity;
     LinearLayout listView;
     int len=0,totalCost=0,walletBalance=0;
@@ -72,8 +71,10 @@ public class OrderDetails extends AppCompatActivity implements View.OnClickListe
         cancelBtn=findViewById(R.id.cancel);
         orderWait=findViewById(R.id.orderWait);
         listView = findViewById(R.id.list);
+        orderMsg=findViewById(R.id.orderMsg);
 
 
+        orderMsg.setVisibility(View.GONE);
         orderWait.setVisibility(View.VISIBLE);
         makeScreenUnresponsive();
 
@@ -143,13 +144,19 @@ public class OrderDetails extends AppCompatActivity implements View.OnClickListe
                 else
                 {
                     Toast.makeText(getApplicationContext(),"Insufficient Balance",Toast.LENGTH_SHORT).show();
+                    orderWait.setVisibility(View.GONE);
+                    makeWindowResponsive();
                 }
-            } else
+            } else {
                 Toast.makeText(getBaseContext(), "Select an item !", Toast.LENGTH_SHORT).show();
+                orderWait.setVisibility(View.GONE);
+                makeWindowResponsive();
+            }
 
         }
         else if(v.equals(cancelBtn))
         {
+            removeOrders(getApplicationContext(),id);
             finish();
         }
 
@@ -248,7 +255,6 @@ public class OrderDetails extends AppCompatActivity implements View.OnClickListe
                         CheckBox c = findViewById(R.id.checkbox);
                         c.setId(i * 10 + 2);
                         c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                            @SuppressLint("ResourceType")
                             @Override
                             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                                 if (isChecked) {
@@ -267,6 +273,12 @@ public class OrderDetails extends AppCompatActivity implements View.OnClickListe
                         });
 
 
+                    }
+                    if(len==0)
+                    {
+                        orderMsg.setVisibility(View.VISIBLE);
+                        acceptBtn.setEnabled(false);
+                        cancelBtn.setEnabled(false);
                     }
 
                 } catch (JSONException e) {

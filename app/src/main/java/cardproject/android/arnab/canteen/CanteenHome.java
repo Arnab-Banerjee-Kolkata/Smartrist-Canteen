@@ -26,8 +26,15 @@ public class CanteenHome extends AppCompatActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_canteen_home);
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("App Name");
-
+        toolbar.setTitle("Smartrist: Canteen");
+        Button bcred=findViewById(R.id.creditb);
+        bcred.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),Credits.class);
+                startActivity(intent);
+            }
+        });
         imageView1 = findViewById(R.id.homeBg);
         foodImg = findViewById(R.id.foodImg);
         acceptBtn = findViewById(R.id.accept);
